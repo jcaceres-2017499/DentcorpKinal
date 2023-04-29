@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="551.0" stylesheets="@../resource/DentcorpKinalCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juancaceres.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="401.0" fitWidth="574.0" layoutX="-9.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/FondoPrincipal2022.png" />
+         </image>
+      </ImageView>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaPaciente" text="Pacientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEspecialidades" text="Especialidades" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaCitas" text="Citas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaMedicamento" text="Medicamentos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaDoctores" text="Doctores" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaRecetas" text="Recetas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaDetalleRecetas" text="Detalle Recetas" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#imprimirReportePacientes" text="Reporte Pacientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#imprimirReporteEspecialidades" text="Reporte Especialidades" />
+                  <MenuItem mnemonicParsing="false" onAction="#imprimirReporteCitas" text="Reporte Citas" />
+                  <MenuItem mnemonicParsing="false" onAction="#imprimirReporteMedicamentos" text="Reporte Medicamentos" />
+                  <MenuItem mnemonicParsing="false" onAction="#imprimirReporteDoctores" text="Reporte Doctores" />
+                  <MenuItem mnemonicParsing="false" onAction="#imprimirReporteRecetas" text="Reporte Recetas" />
+                  <MenuItem mnemonicParsing="false" onAction="#imprimirReporteDetalleReceta" text="Reporte Detalle Receta" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="Acerca de" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="44.0" fitWidth="49.0" layoutX="477.0" layoutY="22.0" onMouseClicked="#cerrar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Cancelar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

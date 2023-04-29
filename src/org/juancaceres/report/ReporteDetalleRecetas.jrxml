@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Plantilla" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="926b3455-cc3e-4824-a5f9-c52b8ad3feda">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Control Clinica Dental IN5BM"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codReceta" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[Select * from DetalleReceta DR Inner Join Medicamentos M on DR.codigoMedicamento = M.codigoMedicamento where DR.codigoReceta=$P{codReceta}]]>
+	</queryString>
+	<field name="codigoDetalleReceta" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="codigoDetalleReceta"/>
+		<property name="com.jaspersoft.studio.field.label" value="codigoDetalleReceta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallereceta"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dosis" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dosis"/>
+		<property name="com.jaspersoft.studio.field.label" value="dosis"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallereceta"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoReceta" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="codigoReceta"/>
+		<property name="com.jaspersoft.studio.field.label" value="codigoReceta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallereceta"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoMedicamento" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="codigoMedicamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="codigoMedicamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallereceta"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descripcion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<line>
+				<reportElement x="-1" y="40" width="570" height="1" forecolor="#53025C" backcolor="#A10A7D" uuid="76a14e61-f46b-4bfe-9c98-01707d16b784"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="99" y="10" width="100" height="20" uuid="0ad5707e-4629-4f7b-b714-4682aed6afc4"/>
+				<textElement>
+					<font fontName="Baskerville Old Face" size="15"/>
+				</textElement>
+				<text><![CDATA[Dosis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="2" width="100" height="28" uuid="81c6d131-3f92-40c0-bde2-fa3c3f3e90ed"/>
+				<textElement>
+					<font fontName="Baskerville Old Face" size="15"/>
+				</textElement>
+				<text><![CDATA[Descripción]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="99" y="14" width="100" height="20" uuid="4b1b38f5-4c2c-4414-896e-43d887cecdf0"/>
+				<textFieldExpression><![CDATA[$F{dosis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="373" y="14" width="100" height="20" uuid="b8a5aa99-93cc-475e-98c4-d405a5d15c81"/>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

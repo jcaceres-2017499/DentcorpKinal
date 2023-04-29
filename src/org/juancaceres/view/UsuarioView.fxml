@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juancaceres.controller.UsuarioController">
+   <children>
+      <ImageView fitHeight="619.0" fitWidth="820.0" layoutX="-18.0" layoutY="-31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/plantilla%2020.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="27.0" layoutY="28.0" prefHeight="343.0" prefWidth="546.0" style="-fx-background-color: #e6dbe3;">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="155.0" layoutX="179.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/nombres.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="189.0" layoutY="92.0" text="Nombre Usuario" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoUsuario" layoutX="336.0" layoutY="38.0" prefHeight="34.0" prefWidth="186.0">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="83.0" fitWidth="92.0" layoutX="50.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/usuarios.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="120.0" fitWidth="155.0" layoutX="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/nombres.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="194.0" layoutY="43.0" text="Codigo Usuario" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="120.0" fitWidth="155.0" layoutX="173.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/nombres.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="182.0" layoutY="143.0" text="Apellido Usuario" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="120.0" fitWidth="155.0" layoutX="179.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/nombres.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="209.0" layoutY="189.0" text="Usuario" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="120.0" fitWidth="155.0" layoutX="176.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/nombres.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="206.0" layoutY="238.0" text="Contraseña" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="120.0" fitWidth="155.0" layoutX="176.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/nombres.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="236.0" layoutY="291.0" text="Rol" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="120.0" fitWidth="155.0" layoutX="14.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/nombres.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="59.0" layoutY="104.0" text="Usuario" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <VBox layoutX="16.0" layoutY="171.0" prefHeight="83.0" prefWidth="150.0">
+               <children>
+                  <Button fx:id="btnNuevo" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#nuevo" prefHeight="40.0" prefWidth="170.0" styleClass="button1" stylesheets="@../resource/DentcorpKinalCSS.css" text="Nuevo" textFill="#ebebeb">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/nuevo%2096.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEliminar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#eliminar" prefHeight="40.0" prefWidth="170.0" styleClass="button1" stylesheets="@../resource/DentcorpKinalCSS.css" text="Cancelar" textFill="#ebebeb">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgCancelar" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Cancelar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <TextField fx:id="txtNombreUsuario" layoutX="336.0" layoutY="87.0" prefHeight="34.0" prefWidth="186.0">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtApellidoUsuario" layoutX="336.0" layoutY="138.0" prefHeight="34.0" prefWidth="186.0">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtUsuario" layoutX="336.0" layoutY="184.0" prefHeight="34.0" prefWidth="186.0">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPassword" layoutX="336.0" layoutY="233.0" prefHeight="34.0" prefWidth="186.0">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="14.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cmbCodigoRol" layoutX="336.0" layoutY="286.0" prefHeight="34.0" prefWidth="186.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

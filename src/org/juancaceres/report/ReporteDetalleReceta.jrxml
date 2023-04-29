@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Plantilla" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="926b3455-cc3e-4824-a5f9-c52b8ad3feda">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Control Clinica Dental IN5BM"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="904"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[Call sp_ListarDetalleRecetas()]]>
+	</queryString>
+	<field name="codigoDetalleReceta" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="codigoDetalleReceta"/>
+		<property name="com.jaspersoft.studio.field.label" value="codigoDetalleReceta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallereceta"/>
+	</field>
+	<field name="dosis" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dosis"/>
+		<property name="com.jaspersoft.studio.field.label" value="dosis"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallereceta"/>
+	</field>
+	<field name="codigoReceta" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="codigoReceta"/>
+		<property name="com.jaspersoft.studio.field.label" value="codigoReceta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallereceta"/>
+	</field>
+	<field name="codigoMedicamento" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="codigoMedicamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="codigoMedicamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallereceta"/>
+	</field>
+	<background>
+		<band height="752" splitType="Stretch">
+			<image>
+				<reportElement x="1" y="0" width="571" height="752" uuid="a2654bc3-584f-4d94-ac8d-49d864d4dbc7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["C:/Users/pjcae/OneDrive/Documentos/NetBeansProjects/DentcorpKinal2017499/src/org/juancaceres/image/Plantilla Reporte 4.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="137" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="10" width="120" height="94" uuid="cdaa1446-2e64-4466-a981-13355c33d3c9"/>
+				<imageExpression><![CDATA["C:/Users/pjcae/OneDrive/Documentos/NetBeansProjects/DentcorpKinal2017499/src/org/juancaceres/image/Icono.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="10" y="10" width="560" height="30" uuid="03d6ad16-af28-46d6-a528-216fab9f02a2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bodoni MT Black" size="20"/>
+				</textElement>
+				<text><![CDATA[Control Clinica Dental]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="40" width="285" height="22" uuid="18381334-c5f9-4108-8435-3d8ca3e93d40"/>
+				<textElement textAlignment="Center">
+					<font fontName="Baskerville Old Face" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[23 avenida 5-23 Zona 10 Ciudad Capital]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="60" width="285" height="22" uuid="abd19603-82e7-43bc-a4b3-b7ad10c058b0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Baskerville Old Face" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefono: 4567 3454]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="82" width="285" height="22" uuid="f37f9aad-c640-4c0d-bc75-868083dfed19"/>
+				<textElement textAlignment="Center">
+					<font fontName="Baskerville Old Face" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIT: 323445-5]]></text>
+			</staticText>
+			<textField pattern="MMMM d, yyyy">
+				<reportElement x="462" y="110" width="100" height="22" uuid="b85a5e6c-3892-4642-adf1-edf52ec1cc1a"/>
+				<textElement>
+					<font fontName="Baskerville Old Face" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="48" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="570" height="30" uuid="d8f6a79f-25ab-4f90-a0fb-90374fd12b41"/>
+				<textElement textAlignment="Center">
+					<font fontName="Baskerville Old Face" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DETALLE RECETAS]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<line>
+				<reportElement x="-1" y="40" width="570" height="1" forecolor="#53025C" backcolor="#A10A7D" uuid="76a14e61-f46b-4bfe-9c98-01707d16b784"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="15" y="11" width="110" height="22" uuid="3d04dae2-d19f-4587-8234-9947ae74dfbf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3cdd7356-e5e7-43b8-8a03-8b80be7a2992"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código Detalle Receta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="10" width="100" height="20" uuid="fa166f79-8c7b-4548-b1ab-28ab3ee3d215">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ae420498-4a74-473a-9459-3fdb9a9231ff"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Número Dosis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="10" width="110" height="20" uuid="91b717a4-42c7-4b6e-b431-3179481665b5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e18b58e3-9577-4472-a8a8-e187f4989fd6"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código De La Receta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="10" width="122" height="20" uuid="dde5f6d2-3067-4b7d-b6cf-e3b300c323ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3e537f4d-a58a-4314-9da5-a6c71e32892d"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código De Medicamento]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="10" width="100" height="18" uuid="0bd91cf5-426a-47b3-bad0-91606854f6bf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3cdd7356-e5e7-43b8-8a03-8b80be7a2992"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{codigoDetalleReceta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="9" width="100" height="20" uuid="b27a40b3-e1ef-42d1-80bc-63e4591982de">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ae420498-4a74-473a-9459-3fdb9a9231ff"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{dosis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="315" y="10" width="100" height="20" uuid="9769eb48-5343-4662-9a8c-c4085860c421">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e18b58e3-9577-4472-a8a8-e187f4989fd6"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{codigoReceta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="10" width="100" height="18" uuid="3d918eea-b38c-4c1b-afef-09a58d4d84dd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3e537f4d-a58a-4314-9da5-a6c71e32892d"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{codigoMedicamento}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="90" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="10" width="570" height="1" forecolor="#53025C" backcolor="#A10A7D" uuid="9bdb3bad-26f5-439c-a472-24d85a0924e8"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="190" splitType="Stretch">
+			<image>
+				<reportElement x="198" y="90" width="175" height="93" uuid="3d88a6c7-1ace-447d-b999-a9bfcde7125c"/>
+				<imageExpression><![CDATA["C:/Users/pjcae/OneDrive/Documentos/NetBeansProjects/DentcorpKinal2017499/src/org/juancaceres/image/Banner DentCorp.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="1" y="30" width="567" height="19" uuid="f0b0fba5-0261-4bc8-971e-2a8eecaadd59"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Juan Pablo Cáceres Enriquez]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="50" width="567" height="19" uuid="8e37f938-eed5-4333-9c7c-d2049c1cfaf5"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[jcaceres-2017499@kinal.edu.gt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="70" width="567" height="19" uuid="f597eed1-5db4-4a81-bf11-39d7618bb24a"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IN5BM]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

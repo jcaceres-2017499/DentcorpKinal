@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juancaceres.controller.LoginController">
+   <children>
+      <ImageView fitHeight="619.0" fitWidth="820.0" layoutX="-18.0" layoutY="-31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/plantilla%2020.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="353.0" fitWidth="212.0" layoutX="88.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/plantilla%2012.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="472.0" fitWidth="336.0" layoutX="312.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/plantilla%2015.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="339.0" fitWidth="336.0" layoutX="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/plantilla%2013.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="73.0" layoutY="53.0" prefHeight="294.0" prefWidth="445.0" style="-fx-background-color: #e6dbe3;">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="155.0" layoutX="43.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/nombres.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="91.0" layoutY="122.0" text="Usuario" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="120.0" fitWidth="155.0" layoutX="36.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/nombres.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="69.0" layoutY="191.0" text="Contraseña" textFill="WHITE">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsuario" layoutX="223.0" layoutY="117.0" prefHeight="34.0" prefWidth="186.0">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnEntrar" layoutX="177.0" layoutY="235.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="92.0" style="-fx-background-color: #6b0c3b;" text="Entrar" textFill="WHITE" />
+            <PasswordField fx:id="txtPassword" layoutX="223.0" layoutY="186.0" prefHeight="34.0" prefWidth="186.0" />
+            <ImageView fitHeight="83.0" fitWidth="92.0" layoutX="191.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/usuario.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="274.0" layoutY="241.0" onAction="#ventanaUsuario" onMouseClicked="#ventanaUsuario" text="Registrese Aquí!!!">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
